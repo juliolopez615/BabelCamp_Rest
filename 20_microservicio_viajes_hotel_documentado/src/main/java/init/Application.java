@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = {"service", "controller"})
+@SpringBootApplication(scanBasePackages = {"service", "controller", "init"})
 @EnableJpaRepositories(basePackages = {"dao"})
 @EntityScan(basePackages = {"model"})
 public class Application {

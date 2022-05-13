@@ -1,0 +1,8 @@
+Identificador de alumno: <input type="text" [(ngModel)] = "idAlumno"> <br><br>
+<input type="button" (click)="buscarAlumno()" value="buscar alumno"> <br><br>
+<table *ngIf="alumno" border ="1">
+  <tr><th>Nombre</th><th>Curso</th><th>Nota</th></tr>
+  <tr>
+    <td>{{alumno.nombre}}</td><td>{{alumno.curso}}</td><td>{{alumno.nota}}</td>
+  </tr>
+</table>
